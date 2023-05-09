@@ -3,7 +3,6 @@ export class Document {
     public id: number,
     public name: string,
     public description: string,
-    public url: string,
-    public children: Document[]
+    public url: string
   ) {}
 }
