@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Contact } from 'src/app/contact.model';
+import { Contact } from 'src/app/contacts/contact.model';
 
 @Component({
   selector: 'app-contact-item',
