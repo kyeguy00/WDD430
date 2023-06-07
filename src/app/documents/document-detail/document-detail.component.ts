@@ -38,5 +38,6 @@ constructor(private documentService: DocumentService,
 
   onDelete() {
     this.documentService.deleteDocument(this.document);
+    this.router.navigate(['../'])
  }
 }

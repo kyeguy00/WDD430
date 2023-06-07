@@ -11,7 +11,7 @@ import { ContactService } from '../contact.service';
   styleUrls: ['./contact-detail.component.css']
 })
 export class ContactDetailComponent implements OnInit {
-  // contact: Contact;
+  contacts: Contact;
 
   id: string;
 

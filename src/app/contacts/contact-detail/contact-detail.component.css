@@ -4,3 +4,7 @@ h1 {
 button {
   margin: .5rem;
 }
+
+ul {
+  list-style: none;
+}

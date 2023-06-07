@@ -1,11 +1,18 @@
 <div class="panel panel-default">
   <div class="panel-heading clearfix">
-    <h1 class="pull-left ">Contacts</h1>
-      <button class="btn btn-success pull-right" routerLink="new">New Contact</button>
+    <h1 class="pull-left">Contacts</h1>
+    <button class="btn btn-success pull-right" routerLink="new">
+      New Contact
+    </button>
   </div>
   <div class="panel-body">
-   <app-contact-item *ngFor="let contact of contacts"
-   [contact]="contact"
-   ></app-contact-item>
+    <app-contact-item
+      *ngFor="let contact of contacts"
+      [contact]="contact"
+      dnd-draggable
+      [dragEnabled]="true"
+      [dragData]="contact"
+      [dropZones]="['contactGroup']"
+    ></app-contact-item>
   </div>
 </div>
