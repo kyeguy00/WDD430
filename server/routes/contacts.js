@@ -6,7 +6,6 @@ module.exports = router;
 
 router.get('/', (req, res, next) => {
   Contact.find()
-    .populate('group')
     .exec()
     .then((contacts) => {
       res.status(200).json(contacts);
